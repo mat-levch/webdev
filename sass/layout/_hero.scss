@@ -1,0 +1,110 @@
+/* -----Hero content----- */
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-color: var(--footer-background-color);
+
+    & .container{
+        display: inline-block;
+    }
+
+    // Ретінізація зображень
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_sm.png);
+    @include mq (retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_sm@2x.png);
+    }
+
+    @media screen and (min-width: 576px){
+        max-width: 576px;
+    }
+
+    @include mq (tablet){
+    max-width: 960px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_md.png);
+    @include mq (retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_md@2x.png);
+    }
+    }
+
+    @media screen and (min-width: 960px) {
+        max-width: 960px;
+    }
+
+    @include mq (desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_lg.png);
+    @include mq (retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero_lg@2x.png);
+    }
+
+    }
+
+    // Елементи секції герой
+    &__title {
+
+    color: var(--primary-background-color);
+    font-weight: 900;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.62;
+    margin: 0px auto;
+    margin-bottom: 30px;
+        
+    @include mq (mobile){
+        max-width: 360px;
+    }
+
+    // @include mq (tablet) {
+    // width: 320px;
+    // }
+
+    @include mq (desktop){
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
+        
+}
+
+    &__button {
+    margin: 0px;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--primary-background-color);
+    background-color: var(--focus-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    }
+}
+
+

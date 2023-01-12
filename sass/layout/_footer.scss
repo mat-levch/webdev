@@ -1,0 +1,291 @@
+/* --------------Footer-------------- */
+
+.footer {
+    background-color: var(--footer-background-color);
+
+    padding-top: 60px; 
+    padding-bottom: 60px;
+
+    & .container {
+    align-items: baseline;
+    
+    @include mq (mobile){
+        width: 480px;
+    }
+
+    @include mq (tablet) {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @include mq (desktop) {
+        width: 1200px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+}
+
+&__info{
+    margin-bottom: 60px;
+    text-align: center;
+    
+    @include mq (desktop){
+    
+    text-align: left;
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+    }
+    
+}
+
+
+&__address {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--white-font-color);
+    line-height: 1.71;
+    margin-top: 20px;
+}
+
+&__address-link {
+    text-decoration: none;
+    color: var(--primary-background-color);
+
+}
+
+&__address-item {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+&__address-item .link {
+    transition: color var(--time-function);
+}
+
+&__address-item:not(:last-child) {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    @include mq (desktop){
+    margin-bottom: 6px;
+    }
+}
+
+&__link {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: .03em;
+    color: rgba(255, 255, 255, .6);
+    transition: color var(--time-function);
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--focus-color);
+}
+
+// Футер соціальні мережі
+
+&__social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    @include mq (tablet) {
+    margin-bottom: 0;
+    }
+    @include mq (desktop){
+    margin-right: 93px;
+    align-items: flex-start;
+    }
+    
+}
+&__social-label {
+
+    color: var(--primary-background-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    height: 16px;
+
+    
+    
+}
+&__social-list {
+    display: flex;
+    align-content: center;
+    margin: 20px 0px 0px 0px;    
+}
+}
+
+// Форма футера
+
+.container-mailing {
+    text-align: center;
+    @include mq (desktop){
+        text-align: left;
+    }
+
+    &__label{
+    text-transform: uppercase;
+    width: 145px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--white-font-color);
+    font-weight: 700;
+    width: 219px
+}
+
+&__items-direction{
+    @include mq (desktop){
+    display: flex;
+    align-items: center;
+    }
+
+}
+
+&__form {
+    margin-bottom: 20px;
+    
+    @include mq (desktop){
+        margin-bottom: 13px;
+    }
+
+    }
+
+
+
+&__input {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 0;
+    margin-top: 13px;
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    outline: none;
+
+    background-color: var(--footer-background-color);
+    color: var(--white-font-color);
+
+    transition: border-color var(--time-function);
+
+    @include mq (mobile) {
+        width: 450px;
+    }
+    
+    @include mq (tablet) {
+        width: 480px;
+    }
+    
+    @include mq (desktop) {
+        width: 358px;
+    }
+
+}
+
+&__input:hover,
+&__input:focus {
+
+    border-color: var(--focus-color);
+}
+
+&__input::placeholder {
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+&__submit-button {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+
+    padding: 10px 28px 10px 29px;
+    width: 200px;
+    height: 50px;
+
+    border-width: 0px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    outline: none;
+
+    background-color: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-font-color);
+
+    @include mq (desktop){
+        margin-left: 12px;
+    }  
+}
+
+&__icon {
+    margin-left: 10px;
+}
+}
+
+.social__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    transition: fill var(--time-function);
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__svg-footer-container {
+    display: flex;
+    align-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-font-color);
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+    transition: background var(--time-function), color var(--time-function);
+
+    &:hover,
+    &:focus {
+    border-radius: 50px;
+    color: var(--white-font-color);
+    background-color: var(--focus-color);
+}
+
+
+}
+
+
+

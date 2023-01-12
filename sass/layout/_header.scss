@@ -1,0 +1,168 @@
+/* ----------header-page---------- */
+.header {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;   
+    border-bottom: 1px solid #ececec;
+
+
+   @include mq (tablet){
+    padding-top: 0;
+    padding-bottom: 0;  
+   }
+    
+   
+
+&__container{
+    display: flex;
+    align-items: center;
+    
+    
+    @include mq (mobile-only){
+    justify-content: space-between;
+    }
+}
+
+}
+
+
+/* -----Navigation----- */
+.nav{
+    align-items: center;
+
+    @include mq (mobile-only){
+    display: none;
+    }
+
+&-list {
+    display: flex;
+
+    color: var(--secondary-font-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+
+    
+
+
+    &__link:hover,
+    &__link:focus {
+    color: var(--focus-color);
+    }
+
+    &__item {
+    position: relative;
+
+    }
+
+    &__item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+    &__link {
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--time-function);
+    }
+
+        
+}
+    
+}
+
+/* -----Contacts----- */
+.contacts-header {
+    margin-left: auto;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    @include mq (mobile-only){
+    display: none;
+    }
+    @include mq (tablet){
+    display: inline-block; 
+    }
+
+    @include mq (desktop){
+    display: flex;
+    margin-top: 0;
+    } 
+
+    &__link--mail{
+        @include mq (tablet-only){
+            padding-top: 21px;
+        }
+    }
+    &__link--phone {
+        @include mq (tablet-only) {
+        padding-bottom: 21px;
+        }
+    }
+
+
+    &__item:not(:last-child){
+        @include mq (tablet-only) {
+        margin-bottom: 10px;
+        }   
+    }
+        
+
+    &__item .link {
+    display: flex;
+    align-items: center;
+    transition: color var(--time-function);
+
+    @include mq (desktop){
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 0;   
+    }
+}
+
+&__item .link:hover,
+&__item .link:focus {
+    color: var(--focus-color);
+}
+
+&__item:not(:last-child){
+  @include mq (desktop){
+    margin-right: 50px;
+  } 
+}
+
+
+
+
+
+&__icon-mail {
+
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+&__icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+    
+}
+
+
+
+
+
