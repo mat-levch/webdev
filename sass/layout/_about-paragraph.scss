@@ -1,5 +1,7 @@
 // styles for about section title and sparagraph
 .about-paragraph{
+    background-color: var(--secondary-background-color);
+    padding-bottom: 0px;
     &__title{
         margin-bottom: 50px;
     }

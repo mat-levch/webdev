@@ -634,6 +634,10 @@ button {
   background-color: var(--focus-color);
 }
 
+.about-paragraph {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 0px;
+}
 .about-paragraph__title {
   margin-bottom: 50px;
 }
