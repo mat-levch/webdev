@@ -1,3 +1,5 @@
+// Java script code makes modale window open and close. It has its own labels, and they are implemented to the html code.
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),

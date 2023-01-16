@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/about.min.css">
+</head>
+<body>
+  <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+    
+        <a href="#" class="logo__link logo__link--header"> Web<span class="logo__span--header">Studio</span></a>
+        <button type="button" class="menu-btn" aria-label="menu open button" aria-expanded="false" data-menu-button>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./images/icons/symbol-defs.svg#mobile-open"></use>
+            <use class="menu-btn__icon-close" href="./images/icons/symbol-defs.svg#mobile-close"></use>
+          </svg>
+        </button>
+    
+        <nav class="nav">
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Studio</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link link">Portfolio</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./about.html" class="nav-list__link current link">About us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-header list">
+          <li class="contacts-header__item">
+            <a href="mailto:mat.levch@gmail.com" class="contacts-header__link--mail link">
+              <svg class="contacts-header__icon-mail">
+                <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              mat.levch@gmail.com</a>
+          </li>
+    
+          <li class="contacts-header__item"><a href="tel:+447946857703" class="contacts-header__link--phone link">
+              <svg class="contacts-header__icon-phone">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +44 7946 857703</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Team section -->
+    <section class="team section">
+        <h2 class="team__title title">Our team</h2>
+       <div class="container"> 
+        <!-- team members -->
+       <ul class="team__list list">
+         <li class="team__item  item">
+           <picture>
+             <source srcset="./images/team/team-mobile/member1.jpg 1x, ./images/team/team-mobile/member1@2x.jpg 2x" media="(min-width: 480px)">
+             <source srcset="./images/team/team-tablet/member1.jpg 1x, ./images/team/team-tablet/member1@2x.jpg 2x" media="(min-width: 768px)">
+             <source srcset="./images/team/team-desktop/member1.jpg 1x, ./images/team/team-desktop/member1@2x.jpg 2x" media="(min-width: 1200px)">
+             <img class="team-member__photo" src="./images/team/team-mobile/member1.jpg" alt="Игорь Демьяненко" width="450" >
+           </picture>
+           <div class="team-div">
+             <h3 class="team__name-title">Igor Demyanenko</h3>
+             <p class="team__position">Product Designer</p>
+             <!-- social media icons -->
+             <ul class="team__social-list social list">
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon">
+                   <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                 </svg>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </li>
+         <li class="team__item  item">
+           <picture>
+             <source srcset="./images/team/team-mobile/member2.jpg 1x, ./images/team/team-mobile/member2@2x.jpg 2x" media="(min-width: 480px)">
+             <source srcset="./images/team/team-tablet/member2.jpg 1x, ./images/team/team-tablet/member2@2x.jpg 2x" media="(min-width: 768px)">
+             <source srcset="./images/team/team-desktop/member2.jpg 1x, ./images/team/team-desktop/member2@2x.jpg 2x" media="(min-width: 1200px)">
+            <img class="team-member__photo" src="./images/team/team-mobile/member2.jpg" alt="Ольга Репина" width="450"> 
+           </picture>
+           
+           <div class="team-div">
+             <h3 class="team__name-title">Olga Repina</h3>
+             <p class="team__position">Frontend Developer</p>
+             <ul class="team__social-list social list">
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                   <svg class="social__icon" >
+                     <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                 </svg>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </li>
+         <li class="team__item  item">
+           <picture>
+             <source srcset="./images/team/team-mobile/member3.jpg 1x, ./images/team/team-mobile/member3@2x.jpg 2x" media="(min-width: 480px)">
+             <source srcset="./images/team/team-tablet/member3.jpg 1x, ./images/team/team-tablet/member3@2x.jpg 2x" media="(min-width: 768px)">
+             <source srcset="./images/team/team-desktop/member3.jpg 1x, ./images/team/team-desktop/member3@2x.jpg 2x" media="(min-width: 1200px)">
+             <img class="team-member__photo" src="./images/team/team-mobile/member3.jpg" alt="Николай Тарасов" width="450">
+           </picture>
+           <div class="team-div">
+             <h3 class="team__name-title">Nikolay Tarasov</h3>
+             <p class="team__position">Marketing</p>
+             <ul class="team__social-list social list">
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                 </svg>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </li>
+         <li class="team__item item">
+           <picture>
+             <source srcset="./images/team/team-mobile/member4.jpg 1x, ./images/team/team-mobile/member4@2x.jpg 2x" media="(min-width: 480px)">
+             <source srcset="./images/team/team-tablet/member4.jpg 1x, ./images/team/team-tablet/member4@2x.jpg 2x" media="(min-width: 768px)">
+             <source srcset="./images/team/team-desktop/member4.jpg 1x, ./images/team/team-desktop/member4@2x.jpg 2x" media="(min-width: 1200px)">
+             <img class="team-member__photo" src="./images/team/team-mobile/member4.jpg" alt="Михаил Ермаков" width="450">
+           </picture>
+           
+           <div class="team-div">
+             <h3 class="team__name-title">Mikhail Ermakov</h3>
+             <p class="team__position">UI Designer</p>
+             <ul class="team__social-list social list">
+               <li class="social__item">
+                 <a class="social__svg-container link" href="">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link" href="">
+                   <svg class="social__icon" >
+                     <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link" href="">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                 </svg>
+                 </a>
+               </li>
+               <li class="social__item">
+                 <a class="social__svg-container link" href="">
+                 <svg class="social__icon" >
+                   <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                 </svg>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </li>
+       </ul>
+     </div>
+     </section> 
+
+     <!-- About paragraph -->
+     <section class="about-paragraph section">
+        <h3 class="about-paragraph__title title">
+            Delivering Cutting-Edge Web and Design Solutions
+        </h3>
+     <div class="container">
+        <p class="about-paragraph__text text">
+            WebStudio's development team is a group of skilled professionals who create websites, apps and design solutions. They work together to deliver high-quality products and services to clients, using their expertise in programming languages, frameworks and design tools. They also collaborate with other departments to understand client needs and tailor solutions accordingly. Their technical skills, creativity and attention to detail make them a key part of the company's success in providing cutting-edge web and design solutions.
+        </p>
+     </div>   
+
+
+     </section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+  <!-- footer contact section -->
+      <div class="footer__info">
+        <a href="" class="footer__logo link"><span class="footer__logo-span">Web</span>Studio</a>
+        <address class="footer__address">Kyiv, 26 Lesya Ukrainka Ave</address>
+        <ul class="footer__address-list list">
+          <li class="footer__address-item"><a href="mailto:mat.levch@gmail.com" class="footer__link">mat.levch@gmail.com</a>
+          </li>
+          <li class="footer__address-item"><a href="tel:+447946857703" class="footer__link">+44 7946 857703</a></li>
+        </ul>
+  
+      </div>
+      <!-- footer social media section -->
+      <div class="footer__social social">
+        <span class="footer__social-label">Join us</span>
+        <ul class="footer__social-list social list">
+          <li class="social__item">
+            <a class="social__svg-footer-container link" href="https://www.instagram.com/">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons/symbol-defs.svg#instagram"></use>
+            </svg>
+            </a>
+          </li>
+  
+          <li class="social__item">
+            <a class="social__svg-footer-container link" href="https://www.twitter.com/">
+            <svg class="social__icon" width="20" height="16.25">
+              <use href="./images/icons/symbol-defs.svg#twitter"></use>
+            </svg>
+            </a>
+          </li>
+  
+          <li class="social__item">
+            <a class="social__svg-footer-container link" href="https://www.facebook.com/">
+            <svg class="social__icon" width="10" height="20">
+              <use href="./images/icons/symbol-defs.svg#facebook"></use>
+            </svg>
+            </a>
+          </li>
+  
+          <li class="social__item">
+            <a class="social__svg-footer-container link" href="https://www.linkedin.com/">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+  <!-- footer subscriotion section -->
+      <div class="container-mailing">
+        <b class="container-mailing__label">Subscribe to the newsletter</b>
+        <div class="container-mailing__items-direction">
+          <form class="container-mailing__form">
+            <input type="text" placeholder="E-mail" class="container-mailing__input">
+          </form>
+          <button type="submit" class="container-mailing__submit-button">Subscribe
+          <svg class="container-mailing__icon" width="24" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Mobile menu -->
+    <!-- Navigation on the pages -->
+<div class="mobile-overlay" data-menu>
+    <div class="mobile-menu container">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__item ">
+            <a class="mobile-nav__link link " href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link current" href="./about.html">About us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- contacts and email -->
+      <div class="mobile-contacts">
+        <ul class="mobile-contacts list" >
+            <li class="mobile-contacts__item">
+              <a class="mobile__link mobile-contacts__link--phone link" href="tel:+447946857703">+44 7946 857703</a>
+              
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="mobile__link mobile-contacts__link--mail link" href="mailto:mat.levch@gmail.com">mat.levch@gmail.com</a>
+            </li>
+          </ul>
+        <!-- social media links -->
+      </div>
+        <div class="mobile-social">
+        <ul class="mobile-social__list list">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="https://www.twitter.com/">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="https://www.linkedin.com/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <!--JavaScript code implementation -->
+  <script src="./js/mobile-menu.js"></script>
+    </body>
+</html>

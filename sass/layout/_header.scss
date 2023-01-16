@@ -11,8 +11,6 @@
     padding-bottom: 0;  
    }
     
-   
-
 &__container{
     display: flex;
     align-items: center;
@@ -24,7 +22,6 @@
 }
 
 }
-
 
 /* -----Navigation----- */
 .nav{
@@ -43,9 +40,6 @@
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
-
-    
-
 
     &__link:hover,
     &__link:focus {
@@ -70,8 +64,6 @@
 
     transition: color var(--time-function);
     }
-
-        
 }
     
 }
@@ -108,13 +100,11 @@
         }
     }
 
-
     &__item:not(:last-child){
         @include mq (tablet-only) {
         margin-bottom: 10px;
         }   
     }
-        
 
     &__item .link {
     display: flex;
@@ -140,9 +130,6 @@
 }
 
 
-
-
-
 &__icon-mail {
 
     width: 16px;
@@ -157,12 +144,5 @@
     margin-right: 10px;
     fill: currentColor;
 }
-
-
     
 }
-
-
-
-
-

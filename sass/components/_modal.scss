@@ -1,5 +1,5 @@
 /* ----------------Modal content----------------*/
-
+// Stilization of the modal window. You can open it by pushing "order a service" button on the main page.
 .backdrop {
     position: fixed;
     z-index: 1;
@@ -15,7 +15,7 @@
 
     overflow-y: scroll;
 }
-
+// code which makes modal open invisible 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -25,6 +25,7 @@
     transform: translate(-50%, -50%) scale(0.9);
 }
 
+// positioning and stilization of modal window
 .modal {
     position: absolute;
     padding: 40px;
@@ -155,7 +156,6 @@
 
 }
 
-
 &__textarea::placeholder {
 
     font-size: 12px;
@@ -198,7 +198,6 @@
     fill: var(--focus-color);
 }
 
-
 &-policy{
     position: relative;
     margin-bottom: 30px; 
@@ -216,8 +215,6 @@
 &-policy__label-check{
     display: flex;
 }
-
-
 
 &-policy__icon--check{
     width: 16px;
@@ -293,4 +290,3 @@
     border-radius: 4px;
 }
 }
-

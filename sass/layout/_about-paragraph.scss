@@ -1,0 +1,11 @@
+// styles for about section title and sparagraph
+.about-paragraph{
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        font-size: 20px;
+        color: var(--secondary-font-color);
+    }
+}

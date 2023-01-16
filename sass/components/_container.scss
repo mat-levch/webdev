@@ -1,6 +1,7 @@
 /* Container */
+// Mmain container of all sections on the page. It has a particular size, which makes content not spread to the edges
 .container {    
-    // width: 100%;
+
     padding: 0px 15px;
     margin: 0 auto;
     
@@ -22,7 +23,4 @@
         -ms-flex-align: center;
         align-items: center;
     }
-    
-    // outline: 1px solid red;
-    
 }

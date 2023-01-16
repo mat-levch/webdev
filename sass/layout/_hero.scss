@@ -16,7 +16,7 @@
         display: inline-block;
     }
 
-    // Ретінізація зображень
+    // Retinization of the images
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/bg-hero_sm.png);
     @include mq (retina) {
@@ -56,7 +56,7 @@
 
     }
 
-    // Елементи секції герой
+    // Hero section elements 
     &__title {
 
     color: var(--primary-background-color);
@@ -70,10 +70,6 @@
     @include mq (mobile){
         max-width: 360px;
     }
-
-    // @include mq (tablet) {
-    // width: 320px;
-    // }
 
     @include mq (desktop){
     max-width: 696px;

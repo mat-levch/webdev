@@ -1,3 +1,7 @@
+// Settings to set up the SASS preprocessor. It makes your css code much better. It takes less memory, 
+// it keeps your css code in sepparate way, therefore it is easier to edit or manage exact part,
+// then search it in large css code.
+
 {
     "liveSassCompile.settings.formats": [
         {

@@ -1,16 +1,19 @@
 // Media query mixin
-
+// Mixins make writing responsive much easier, they help making CSS easier to read 
+// Basically you have 3 types of divises, mobile, tablet and desktop, therefore 3 different sizes
+// you need to write a rule, which changes the size of the content, adds new or makes disappear some of it 
 @mixin mq($screen) {
     $mobile: 480px;
     $tablet: 768px;
     $desktop: 1200px;
 
+    // this one makes limited size, and you can`t make it smaller
     @if $screen ==mobile-only {
         @media screen and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     }
-
+    // this one from the smallest one untill 767, if 1 px more its gonna be another type of devise, therefore another size
     @else if $screen ==mobile {
         @media screen and (min-width: $mobile) {
             @content;
@@ -34,13 +37,13 @@
             @content;
         }
     }
-
+    // this one keeps content on the page on the same size, even if your screen is bigger then 1200px
     @else if $screen ==notDesktop {
         @media screen and (max-width: #{$desktop - 0.02}) {
             @content;
         }
     }
-
+    // this is retina images(image created specifically to look sharp on a Retina display), for different types of screen (retina screens are common for Apple computers)
     @else if $screen ==retina {
 
         @media screen and (min-device-pixel-ratio: 2),
