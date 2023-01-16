@@ -3,7 +3,7 @@
 /* Zeroing/Hiding Elements/General Styles */
 *,
 ::before,
-::after {
+::after{
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-body.modal-open{
+body.modal-open {
     overflow: hidden;
 }
 

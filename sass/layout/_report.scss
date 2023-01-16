@@ -1,0 +1,22 @@
+.report{
+
+    &-title{
+        font-size: 25px;
+    }
+    &-title:first-child{
+        margin-bottom: 20px;
+    }
+
+    &-paragraph{
+        font-size: 20px;
+
+        &__link{
+            text-decoration: underline;
+        }
+        &__link:hover,
+        &__link:focus{
+            color: var(--focus-color);
+            transition: color var(--time-function);
+        }
+    }
+}

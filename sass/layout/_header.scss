@@ -53,7 +53,9 @@
 
     &__item:not(:last-child) {
     margin-right: 50px;
-
+    @include mq (tablet-only){
+        margin-right: 33px;
+    }
 }
 
     &__link {

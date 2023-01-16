@@ -2,7 +2,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
-  --focus-color:	#808000;
+  --focus-color:	#228B22;
   --primary-font-color: #757575;
   --secondary-font-color: #212121;
   --white-font-color: #fff;
@@ -421,6 +421,11 @@ button {
 }
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .nav-list__item:not(:last-child) {
+    margin-right: 33px;
+  }
 }
 .nav-list__link {
   display: block;

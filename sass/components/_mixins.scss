@@ -43,7 +43,7 @@
             @content;
         }
     }
-    // this is retina images(image created specifically to look sharp on a Retina display), for different types of screen (retina screens are common for Apple computers)
+    // this is retina images(image created specifically to look sharp on a Retina display), for different types of screen (retina screens are common for Apple divices)
     @else if $screen ==retina {
 
         @media screen and (min-device-pixel-ratio: 2),
